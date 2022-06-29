@@ -2,7 +2,7 @@
   {
     "sale": "",
     "itemType": "Fancy Product",
-    "starCount": [],
+    "starCount": 0,
     "price": {
       "oldPrice": "",
       "newPrice": "$40.00 - $80.00"
@@ -12,7 +12,7 @@
   {
     "sale": "sale",
     "itemType": "Special Item",
-    "starCount": ["*", "*", "*", "*", "*"],
+    "starCount": 5,
     "price": {
       "oldPrice": "$20.00",
       "newPrice": "$18.00"                                         
@@ -22,7 +22,7 @@
   {
     "sale": "sale",
     "itemType": "Sale Item",
-    "starCount": [],
+    "starCount": 0,
     "price": {
       "oldPrice": "$50.00",
       "newPrice": "$25.00"
@@ -32,7 +32,7 @@
   {
     "sale": "",
     "itemType": "Popular Item",
-    "starCount": ["*", "*", "*", "*", "*"],
+    "starCount": 5,
     "price": {
       "oldPrice": "",
       "newPrice": "$40.00"
@@ -42,7 +42,7 @@
   {
     "sale": "sale",
     "itemType": "Sale Item",
-    "starCount": [],
+    "starCount": 0,
     "price": {
       "oldPrice": "$50.00",
       "newPrice": "$25.00"
@@ -52,7 +52,7 @@
   {
     "sale": "",
     "itemType": "Fancy Product",
-    "starCount": [],
+    "starCount": 0,
     "price": {
       "oldPrice": "",
       "newPrice": "$120.00 - $280.00"
@@ -62,7 +62,7 @@
   {
     "sale": "sale",
     "itemType": "Special Item",
-    "starCount": ["*", "*", "*", "*", "*"],
+    "starCount": 5,
     "price": {
       "oldPrice": "$20.00",
       "newPrice": "$18.00"
@@ -72,7 +72,7 @@
   {
     "sale": "",
     "itemType": "Popular Item",
-    "starCount": ["*", "*", "*", "*", "*"],
+    "starCount": 5,
     "price": {
       "oldPrice": "",
       "newPrice": "$40.00"

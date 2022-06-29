@@ -1,6 +1,17 @@
 import React from "react";
 
 function Cards(props) {
+
+  const printStars = (count) => {
+    const starList = []
+
+    for(let i=0; i<count; i++) {
+      starList.push(<div className="bi-star-fill"></div>)
+    }
+
+    return starList;
+  }
+
   return (
     <section className="py-5">
       <div className="container px-4 px-lg-5 mt-5">
@@ -23,9 +34,7 @@ function Cards(props) {
                   <div className="text-center">
                     <h5 className="fw-bolder">{props.data[i].itemType}</h5>
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                      {props.data[i].starCount.map((star, i) => (
-                        <div className="bi-star-fill" key={i-10}></div>
-                      ))}
+                      {printStars(props.data[i].starCount)}
                     </div>
                     <span className="text-muted text-decoration-line-through">
                       {props.data[i].price.oldPrice}
