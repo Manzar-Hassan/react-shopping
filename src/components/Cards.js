@@ -6,7 +6,7 @@ function Cards(props) {
     const starList = []
 
     for(let i=0; i<count; i++) {
-      starList.push(<div className="bi-star-fill"></div>)
+      starList.push(<div className="bi-star-fill" key={i}></div>)
     }
 
     return starList;
@@ -28,7 +28,7 @@ function Cards(props) {
                 <img
                   className="card-img-top"
                   src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="product image"
+                  alt="product"
                 />
                 <div className="card-body p-4">
                   <div className="text-center">
@@ -44,7 +44,7 @@ function Cards(props) {
                 </div>
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent d-flex justify-content-center flex-column">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
+                    <a className="btn btn-outline-dark mt-auto" href="someRandomUrl.xyz">
                       {props.data[i].buttonName}
                     </a>
                   </div>
