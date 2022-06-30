@@ -2,7 +2,7 @@ import React from "react";
 
 //creating and exporting cards component
 const Cards = (props) => {
-  
+
   // function to return number of stars based on the input
   const printStars = (count) => {
     const starList = [];
@@ -47,13 +47,12 @@ const Cards = (props) => {
                 </div>
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent d-flex justify-content-center flex-column">
                   <div className="text-center">
-                    <a
+                    <button
                       className="btn btn-outline-dark mt-auto"
-                      href="!#"
                       onClick={props.manageItems}
                     >
                       {props.data[i].buttonName}
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

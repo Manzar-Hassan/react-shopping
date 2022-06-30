@@ -5,12 +5,13 @@ const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container px-4 px-lg-5">
-        <a className="navbar-brand" href="#!">
+        <a className="navbar-brand" href="/">
           Start Bootstrap
         </a>
-        <button
+        <a
           className="navbar-toggler"
-          type="button"
+          href="/"
+          type="a"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
@@ -18,16 +19,16 @@ const Navbar = (props) => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </a>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#!">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#!">
+              <a className="nav-link" href="/">
                 About
               </a>
             </li>
@@ -35,16 +36,15 @@ const Navbar = (props) => {
               <a
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
-                href="#!"
-                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                href="/"
               >
                 Shop
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#!">
+                  <a className="dropdown-item" href="/">
                     All Products
                   </a>
                 </li>
@@ -52,12 +52,12 @@ const Navbar = (props) => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#!">
+                  <a className="dropdown-item" href="/">
                     Popular Items
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#!">
+                  <a className="dropdown-item" href="/">
                     New Arrivals
                   </a>
                 </li>
@@ -65,13 +65,13 @@ const Navbar = (props) => {
             </li>
           </ul>
           <form className="d-flex">
-            <button className="btn btn-outline-dark" type="submit">
+            <a className="btn btn-outline-dark" type="submit" href="/">
               <i className="bi-cart-fill me-1"></i>
               Cart
 
               {/* passing updated counter value to cart */}
               <span className="badge bg-dark text-white ms-1 rounded-pill">{props.itemCount}</span>
-            </button>
+            </a>
           </form>
         </div>
       </div>
