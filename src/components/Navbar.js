@@ -1,6 +1,7 @@
 import React from "react";
 
-function Navbar() {
+//creating navbar component
+const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container px-4 px-lg-5">
@@ -34,7 +35,7 @@ function Navbar() {
               <a
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
-                href="#"
+                href="#!"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -67,7 +68,9 @@ function Navbar() {
             <button className="btn btn-outline-dark" type="submit">
               <i className="bi-cart-fill me-1"></i>
               Cart
-              <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+
+              {/* passing updated counter value to cart */}
+              <span className="badge bg-dark text-white ms-1 rounded-pill">{props.itemCount}</span>
             </button>
           </form>
         </div>

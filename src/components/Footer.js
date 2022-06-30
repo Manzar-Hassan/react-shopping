@@ -1,6 +1,7 @@
 import React from "react";
 
-function Footer() {
+//creating and exporting footer component
+const Footer = () => {
   return (
     <footer className="py-5 bg-dark">
       <div className="container">

@@ -1,17 +1,20 @@
 import React from "react";
 
-function Cards(props) {
-
+//creating and exporting cards component
+const Cards = (props) => {
+  
+  // function to return number of stars based on the input
   const printStars = (count) => {
-    const starList = []
+    const starList = [];
 
-    for(let i=0; i<count; i++) {
-      starList.push(<div className="bi-star-fill" key={i}></div>)
+    for (let i = 0; i < count; i++) {
+      starList.push(<div className="bi-star-fill" key={i}></div>);
     }
 
     return starList;
-  }
+  };
 
+  //creating cards component
   return (
     <section className="py-5">
       <div className="container px-4 px-lg-5 mt-5">
@@ -44,7 +47,11 @@ function Cards(props) {
                 </div>
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent d-flex justify-content-center flex-column">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="someRandomUrl.xyz">
+                    <a
+                      className="btn btn-outline-dark mt-auto"
+                      href="!#"
+                      onClick={props.manageItems}
+                    >
                       {props.data[i].buttonName}
                     </a>
                   </div>
